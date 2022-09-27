@@ -9,5 +9,5 @@ app.get("/api/users/currentuser", (req, res) => {
 });
 
 app.listen(3000, () => {
-  console.log("Listening on port 3000!!!!!!");
+  console.log("Listening on port 3000! Work fine on google cloud K8s cluster when update any thing only by use of sSKAFFOLD ");
 });

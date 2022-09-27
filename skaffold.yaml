@@ -8,7 +8,7 @@ build:
   # local:
   #   push: false
   googleCloudBuild: 
-    projectId: ticketing-dev-363818  
+      projectId: ticketing-dev-363818  
   artifacts:
     - image: us.gcr.io/ticketing-dev-363818/auth
       context: auth
