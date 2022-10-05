@@ -6,9 +6,9 @@ deploy:
       - ./infra/k8s/*
 build:
   local:
-      push: false
-  # googleCloudBuild: 
-  #     projectId: ticketing-dev-363818  
+    push: false
+  # googleCloudBuild:
+  #     projectId: ticketing-dev-363818
   artifacts:
     - image: bilalkhawajaa/auth
       context: auth
@@ -17,4 +17,12 @@ build:
       sync:
         manual:
           - src: "src/**/*.ts"
+            dest: .
+    - image: bilalkhawajaa/ticketing-client
+      context: client
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: "**/*.js"
             dest: .
