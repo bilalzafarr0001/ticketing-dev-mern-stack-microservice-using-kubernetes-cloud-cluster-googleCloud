@@ -19,7 +19,7 @@ stan.on('connect', () => {
     .subscriptionOptions()
     .setManualAckMode(true)
     .setDeliverAllAvailable()
-    //x.setDurableName('accounting-service');
+    .setDurableName('accounting-service');
 
   const subscription = stan.subscribe(
     'ticket:created',
