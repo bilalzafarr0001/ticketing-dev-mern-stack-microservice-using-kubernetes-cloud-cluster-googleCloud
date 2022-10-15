@@ -1,4 +1,4 @@
-import { Listener, OrderCreatedEvent, Subjects } from '@cygnetops/common';
+import { Listener, OrderCreatedEvent, Subjects } from 'common-lib-myproject';
 import { Message } from 'node-nats-streaming';
 import { queueGroupName } from './queue-group-name';
 import { expirationQueue } from '../../queues/expiration-queue';
