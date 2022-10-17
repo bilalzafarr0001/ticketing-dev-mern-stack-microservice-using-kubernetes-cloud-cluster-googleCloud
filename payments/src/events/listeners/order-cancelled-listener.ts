@@ -3,7 +3,7 @@ import {
   Subjects,
   Listener,
   OrderStatus,
-} from '@cygnetops/common';
+} from 'common-lib-myproject';
 import { Message } from 'node-nats-streaming';
 import { queueGroupName } from './queue-group-name';
 import { Order } from '../../models/order';

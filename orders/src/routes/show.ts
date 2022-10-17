@@ -3,7 +3,7 @@ import {
   requireAuth,
   NotFoundError,
   NotAuthorizedError,
-} from '@cygnetops/common';
+} from 'common-lib-myproject';
 import { Order } from '../models/order';
 
 const router = express.Router();
