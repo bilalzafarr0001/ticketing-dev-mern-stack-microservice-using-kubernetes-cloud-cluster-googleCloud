@@ -1,5 +1,5 @@
 import express, { Request, Response } from 'express';
-import { requireAuth } from 'common-lib-myproject';
+import { requireAuth } from '@cygnetops/common';
 import { Order } from '../models/order';
 
 const router = express.Router();
