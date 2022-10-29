@@ -12,7 +12,8 @@ export default () => {
       email,
       password
     },
-    onSuccess: () => Router.push('/')
+    onSuccess: () => Router.push('/'),
+    onError : (err) =>  reject(err)
   });
 
   const onSubmit = async event => {
