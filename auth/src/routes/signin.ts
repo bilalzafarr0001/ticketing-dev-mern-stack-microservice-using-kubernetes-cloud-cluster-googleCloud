@@ -50,9 +50,6 @@ router.post(
     };
 
     res.status(200).send(existingUser);
-    req.on("close", () => {
-      console.log("closed connection");
-    });
   }
 );
 
