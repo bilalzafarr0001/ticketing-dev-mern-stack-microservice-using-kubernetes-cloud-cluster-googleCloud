@@ -45,6 +45,9 @@ router.post(
     };
 
     res.status(201).send(user);
+    req.on("close", () => {
+      console.log("closed connection");
+    });
   }
 );
 
